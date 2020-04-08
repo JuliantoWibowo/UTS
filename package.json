@@ -1,0 +1,24 @@
+{
+  "name": "uts",
+  "version": "1.0.0",
+  "description": "Aplikasi Rest Api dan JWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliantoWibowo/UTS.git"
+  },
+  "keywords": [
+    "Rest",
+    "Api",
+    "JWT"
+  ],
+  "author": "Juli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliantoWibowo/UTS/issues"
+  },
+  "homepage": "https://github.com/JuliantoWibowo/UTS#readme"
+}
