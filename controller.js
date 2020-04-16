@@ -244,9 +244,57 @@ exports.ubahservice = function (req, res) {
 
 
 //Menghapus data berdasarkan id
-exports.hapusMahasiswa = function(req, res){
-    var id = req.body.id_mahasiswa;
-    connection.query('DELETE FROM mahasiswa WHERE id_mahasiswa=?', [id],
+exports.hapusMontir = function(req, res){
+    var id = req.body.id_montir;
+    connection.query('DELETE FROM t_montir WHERE id_montir=?', [id],
+    function (error, rows, fields) {
+        if (error) {
+            console.log(error);
+        } else {
+            response.ok("Berhasil Hapus Data", res)
+        }
+    });
+};
+
+exports.hapusSparepart = function(req, res){
+    var id = req.body.id_sparepart;
+    connection.query('DELETE FROM t_sparepart WHERE id_sparepart=?', [id],
+    function (error, rows, fields) {
+        if (error) {
+            console.log(error);
+        } else {
+            response.ok("Berhasil Hapus Data", res)
+        }
+    });
+};
+
+exports.hapusUSer = function(req, res){
+    var id = req.body.id_user;
+    connection.query('DELETE FROM t_user WHERE id_user=?', [id],
+    function (error, rows, fields) {
+        if (error) {
+            console.log(error);
+        } else {
+            response.ok("Berhasil Hapus Data", res)
+        }
+    });
+};
+
+exports.hapusLevel = function(req, res){
+    var id = req.body.id_level;
+    connection.query('DELETE FROM level WHERE id_level=?', [id],
+    function (error, rows, fields) {
+        if (error) {
+            console.log(error);
+        } else {
+            response.ok("Berhasil Hapus Data", res)
+        }
+    });
+};
+
+exports.hapusservice = function(req, res){
+    var id = req.body.id_service;
+    connection.query('DELETE FROM t_service WHERE id_service=?', [id],
     function (error, rows, fields) {
         if (error) {
             console.log(error);
